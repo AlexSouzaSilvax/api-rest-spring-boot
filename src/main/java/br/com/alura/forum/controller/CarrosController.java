@@ -24,4 +24,18 @@ public class CarrosController {
 	
 		return Arrays.asList(c, c0,c1,c2,c3,c4,c5);
 	}
+	
+	@RequestMapping("/motos")	
+	public List<Carros> listaMotos() {		
+
+	    Carros c = new Carros("0", "https://i.ytimg.com/vi/h-GEwG4cdwo/maxresdefault.jpg", "Hornet Carburada", "Amarela", "2006", "Honda", "14.500");
+	    Carros c0 = new Carros("1", "https://cdn.salaodocarro.com.br/_upload/motos/2019/01/11/honda-biz-125-2019-10208-0.jpg", "Honda Biz FlexOne", "Branca", "2019", "Honda", "7.500");
+		Carros c1 = new Carros("2", "https://img.olx.com.br/images/15/159929031142780.jpg", "Pop 110i", "Vermelha", "2019", "Honda", "6.800");
+		Carros c2 = new Carros("3", "https://odia.ig.com.br/_midias/jpg/2018/12/04/yamaha_lander_2019_2-8882648.jpg", "Lander XTZ 250", "Banca", "2019", "Yamaha", "11.900");
+		Carros c3 = new Carros("4", "https://bazzaz.net/wp-content/uploads/images/products/products-z1000_2014.jpg", "Kawasaki Z1000", "Verde", "2020", "Kawasaki", "55.990");
+		Carros c4 = new Carros("5", "https://abrilexame.files.wordpress.com/2018/10/batpod-e1473172091680.jpg", "BatMoto", "Preta", "-", "Batman", "-");
+		Carros c5 = new Carros("6", "https://viagemdemoto.com/images/stories/0711/Moto_do_Capitao_America_1.jpg", "Magrela Do Cap. América", "-", "-", "U.S.A", "-");
+	
+		return Arrays.asList(c, c0,c1,c2,c3,c4,c5);
+	}
 }
