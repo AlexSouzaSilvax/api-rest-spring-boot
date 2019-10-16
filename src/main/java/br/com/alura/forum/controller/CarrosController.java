@@ -11,6 +11,7 @@ import br.com.alura.forum.model.Carros;
 @RestController
 public class CarrosController {
 
+	@CrossOrigin
 	@RequestMapping("/carros")	
 	public List<Carros> listaCarros() {		
 
@@ -25,6 +26,7 @@ public class CarrosController {
 		return Arrays.asList(c, c0,c1,c2,c3,c4,c5);
 	}
 	
+	@CrossOrigin
 	@RequestMapping("/motos")	
 	public List<Carros> listaMotos() {		
 
